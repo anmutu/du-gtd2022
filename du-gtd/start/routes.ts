@@ -20,6 +20,12 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', async () => {
-  return { hello: 'world' }
-})
+// Route.get('/', async () => {
+//   return { hello: 'world' }
+// })
+
+//gtd
+Route.post('/dos', 'DosController.index')
+Route.post('/dos/create', 'DosController.create')
+Route.get('/dos/destroy/:id', 'DosController.destroy')
+Route.post('/dos/update', 'DosController.update')
