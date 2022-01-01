@@ -1,0 +1,19 @@
+@uri= http://127.0.0.1:3333/
+
+###
+POST  {{uri}}dos
+
+###
+POST  {{uri}}dos/create
+
+Content-Type: application/json
+{
+    "user_id":211,
+    "remark":"remark"
+}
+
+
+###
+GET {{uri}}dos/destroy/1
+
+
